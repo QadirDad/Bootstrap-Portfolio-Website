@@ -139,16 +139,16 @@ p{
 
 .slide{
     height: 15vh;
-    gap: 7rem;
+    gap: 4rem;
 }
 
 .slide-con{
-    gap: 7rem;
+    gap: 5rem;
     animation: slider 8s infinite linear;
 }
 
 .slide-con div .fa-brands{
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 .blur{
