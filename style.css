@@ -1,0 +1,328 @@
+@font-face {
+    font-family: satoshi;
+    src: url(assests/Satoshi-Light.otf);
+}
+
+@font-face {
+    font-family: gambetta;
+    src: url(assests/Gambetta\ Light.ttf);
+}
+
+@font-face {
+    font-family: chillax;
+    src: url(assests/Chillax-Light.otf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: satoshi, sans-serif;
+    /* border: .1rem solid; */
+}
+
+
+:root{
+    --brown-500: rgb(218, 197, 167);
+    --brown-400: #edd6b6;
+    --brown-100: #dac5a726;
+    --brown-200: #dac5a70d;
+}
+
+
+/* BASIC STYLING */
+.bg-brown-500{
+    background: var(--brown-500)
+}
+
+.txt-brown-500{
+    color: var(--brown-500);
+}
+
+.bg-brown-100{
+    background: var(--brown-100);
+}
+
+.bg-brown-200{
+    background: var(--brown-200);
+}
+
+.myborder{
+    border: .01rem solid var(--brown-100);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    letter-spacing: .1rem;
+    font-size: 0.82rem
+}
+
+a:hover{
+    color: var(--brown-400) !important;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.myborder{
+    border: .01rem solid var(--brown-100);
+}
+
+/* NAVBAR */
+
+.navbar-brand{
+    font-family: chillax, sans-serif;
+    font-size: 1.4rem;
+}
+
+.navbar .container{
+    max-width: 35rem;
+    padding-block: .9rem;
+}
+
+.nav-link{
+    font-size: 0.82rem !important;
+}
+
+.glass{
+    background: var(--brown-100);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.btn{
+    padding: 0.75rem 1rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
+.btn:hover{
+    background: var(--brown-400) !important;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28218, 197, 167, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+/* HERO SECTION */
+
+.hero-section{
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+span{
+    font-family: gambetta, sans-serif;
+}
+
+h1{
+    font-size: 6.8vw;
+}
+
+p{
+    font-family: chillax, sans-serif;
+    max-width: 590px;
+    line-height: 1.8rem;
+}
+
+/* SLIDER */
+
+.slide{
+    height: 15vh;
+    gap: 7rem;
+}
+
+.slide-con{
+    gap: 7rem;
+    animation: slider 8s infinite linear;
+}
+
+.slide-con div .fa-brands{
+    font-size: 4rem;
+}
+
+.slide::-webkit-scrollbar{
+    display: none;
+}
+
+.blur{
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+}
+
+
+/* CARDS SECTION */
+
+.working-area{
+    padding-block: 3rem;
+}
+
+.mycard{
+    width: 29rem;
+}
+
+.fun-btn{
+    transition: transform .3s ease-in-out;
+}
+
+.fun-btn:hover{
+    transform: rotate(45deg);
+}
+
+
+/* WORK SECTION */
+
+h2{
+    font-size: 2.8rem;
+    letter-spacing: .1rem;
+}
+
+.project-card{
+    width: 42rem;
+    height: 100%;
+}
+
+.btn-effect{
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.project-card:hover{
+    cursor: pointer;
+}
+
+.project-card:hover .btn-effect{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* TEXT SLIDER */
+.text-slide::-webkit-scrollbar{
+    display: none;
+}
+
+.my-new-border{
+    border-top: .01rem solid var(--brown-100);
+    border-bottom: .01rem solid var(--brown-100);
+}
+
+.txt-slider{
+    animation: slider 8s linear infinite;
+}
+
+/* CLIENTS SAYING */
+
+h5{
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    margin-bottom: 0;
+}
+
+.client-card{
+    width: 35rem;
+}
+
+.client-container{
+    width: 4rem;
+    aspect-ratio: 1;
+}
+
+/* INTRO SECTION */
+
+.profile-container img{
+    width: 27rem;
+}
+
+.profile-container::before,
+.profile-container::after{
+    content: "QJ Ahmed.";
+    position: absolute;
+    font-size: 10vw;
+    color: var(--brown-500);
+    font-weight: 500;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: gambetta, sans-serif;
+}
+
+.profile-container::before{
+    left: -15%;
+}
+
+.profile-container::after{
+    right: -15%;
+}
+
+.social-icon{
+    width: 2.5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.fa-brands{
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+}
+
+
+@keyframes slider{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:980px){
+    h1{
+        font-size: 4rem;
+    }
+
+    .hero-section .container{
+        padding-top: 5rem;
+    }
+
+    .mycard{
+        width: 100%;
+    }
+
+}
