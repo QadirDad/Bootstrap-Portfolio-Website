@@ -314,7 +314,7 @@ h5{
 
 @media screen and (max-width:980px){
     h1{
-        font-size: 4rem;
+        font-size: 4vw;
     }
 
     .hero-section .container{
